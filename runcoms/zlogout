@@ -15,4 +15,7 @@ Thank you. Come again!
   -- Dr. Apu Nahasapeemapetilon
 EOF
 
+if [ -f $HOME/.zlogout.local ]; then
+  source $HOME/.zlogout.local
+fi
 } >&2
