@@ -59,7 +59,9 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+zstyle ':prezto:module:editor' key-bindings 'vi'
+zstyle ':prezto:module:editor:info:keymap:alternate' format '❮❮❮'
+RPROMPT='%(?.%F{magenta}.%F{red})${editor_info[keymap]}'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
