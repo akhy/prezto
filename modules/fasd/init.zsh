@@ -52,3 +52,10 @@ function fasd_cd {
 
 # Changes the current working directory interactively.
 alias j='fasd_cd -i'
+
+# Sensible aliases
+alias a='fasd -a'
+alias d='fasd -d'
+alias f='fasd -f'
+alias z='fasd_cd -d'
+alias v="f -e $EDITOR"
